@@ -1,0 +1,75 @@
+
+body 
+{
+    background-color: rgb(204, 170, 160);
+    margin: 0;
+} 
+/* 
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }  
+  .topnav a.active {
+    background-color: rgb(43, 9, 34);
+    color: white;
+  } */
+  
+  .topnav {
+    display:flex;
+    background-color:rgb(82, 76, 76);
+    justify-content: center;
+   
+  }
+  .topnav a {
+    padding: 20px; 
+    text-decoration: none;
+    text-align: center;
+    color:black;
+    }
+    @media screen and (max-width:700px)
+    {
+    .topnav 
+    {
+      flex-direction: column;
+      /*This make it stack when it gets smaller*/
+      /*On hover hightlight*/
+        }
+    }
+    .bodytext{
+      /*make the text justified*/
+      /*display:flex;*/
+      background-color:rgb(241, 236, 236);
+      text-align: column;
+    }
+  .headerbox
+  { 
+    padding:20px; background:rgb(223, 215, 220) 
+  }
+  .flexible
+  { 
+    display:flex; height:300px; width:400px; background: rgb(204, 160, 160); flex-direction: column;
+  }
+  .centered
+  { 
+    justify-content:center;align-items:center 
+  }
+  .push-right
+  { 
+    margin-left:auto 
+  }
+  .space-evenly
+  {
+    justify-content: space-evenly;
+  }
