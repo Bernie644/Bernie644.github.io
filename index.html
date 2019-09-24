@@ -13,9 +13,12 @@
           <a href="page2.html">Page 2</a>
           <a href="page3.html">Page 3</a>
         </nav>
+
         <input type="button" id="ajax-txt-btn" value="Load from text file" />        
         <p id = "text"></p>                                                     <!--sets the id of this p tag to text-->
-        <input type="button" id="ajax-json-btn" value="Load from json file"/>
+        <input type="button" id="ajax-json-btn" value="Load from json file"/>   <!--need to reference javascript-->
+        <p id = "json"></p>
+
         <input type="button" id="ajax-php-btn" value="Send to PHP server"/>
         <div style="padding-left:16px"></div>
         <div class="space-evenly">
@@ -31,9 +34,8 @@
         </div>
       </header>
     </div>
-
     <div class="bodytext"></div>
-    <script src="main.js"></script>
+    <script src="main.js"></script>   <!--this references the javascript-->
     <script src="http://kit.fontawesome.com/d32396bb69.js"></script>
   </body>
 </html>
