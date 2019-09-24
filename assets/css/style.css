@@ -1,7 +1,7 @@
 
 body 
 {
-    background-color: rgb(204, 170, 160);
+    background-color: rgb(240, 207, 233);
     margin: 0;
 } 
 /* 
@@ -28,7 +28,7 @@ body
   
   .topnav {
     display:flex;
-    background-color:rgb(82, 76, 76);
+    background-color:rgb(122, 119, 119);
     justify-content: center;
    
   }
