@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Laptops</title>
+  </head>
+  <body>
+    <div class="background margins padding border">
+      <header>
+        <div class="dropdown">
+          <button>Navigation</button>
+          <ul class="dropdown-menu">
+            <a class="active" href="index.html">Home</a>
+            <a href="apple.html">Apple</a>
+            <a href="dell.html">Dell</a>
+            <a href="contactUs.html">Contact Us</a>
+          </ul>
+        </div>
+        <div style="padding-left:16px"></div>
+        <div class="space-evenly">
+          <div class="redbox">
+            <h1>Laptops</h1>
+            <img src="" alt="" class="Centre" width="900" />
+          </div>
+        </div>
+      </header>
+    </div>
+    <input type="hidden" id="ajax-json-btn"/><h1 id = "json"></h1>
+    <fieldset>
+      <form method="POST" action="/process_form_url">
+        <!--key/value pairs-->
+        <label for="fName">First name</label>
+        <input id="fName" type="text" name="firstName" />
+        <label for="lName">Last name</label>
+        <input id="lName" type="text" email="email" />
+        <label for="fName">Email</label>
+        <input id="fName" type="text" name="firstName" />
+        <input type="submit" value="Submit" formaction="index.html" />
+        <!--How to send to server-->
+      </form>
+    </fieldset>
+    <script src="indexContactUs.js"></script>
+  </body>
+</html>

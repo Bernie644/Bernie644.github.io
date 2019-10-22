@@ -1,48 +1,52 @@
 <!DOCTYPE html>
-<html>
-        <head>
-        <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
-        <title>Index</title>
-        </head>
-        <body>
-                <!-- <i class="fab fa-500px"></i> The last thing that is rendered as the script tag is at the bottom -->
-                        <div class="background margins padding border">
-                                <header>
-                                        <nav class="topnav">
-                                                <a class="active" href="Class5index.html">Index</a>
-                                                <a href="Page 2 Cake Website.html">Page 2</a>
-                                                <a href="Page3CakeWebsite.html">Page 3</a>                                
-                                        </nav>                              
-                                        <div style="padding-left:16px"></div>                             
-                                        <div class = "space-evenly">
-                                                <div class = "redbox">
-                                                        <h1>Recipe Program</h1>
-                                                        <img src="Assets/Images/LionKing.jpg" alt = "Lions" class = "centre" width="300">
-                                                </div>
-                                        </div>                    
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Laptops</title>
+  </head>
+  <body>
+    <div class="background margins padding border">
+      <header>
+        <div class="dropdown">
+          <button>Navigation</button>
+          <ul class="dropdown-menu">
+            <a class="active" href="index.html">Home</a>
+            <a href="apple.html">Apple</a>
+            <a href="dell.html">Dell</a>
+            <a href="contactUs.html">Contact Us</a>
+          </ul>
+        </div>
+      </header>
+    </div> 
+   <div id="submit">
+      <label>Name  
+        <input id="name" type="string" name="name">
+      </label><br>
+      <label>Email
+        <input id="email" type="string" name="email">
+      </label><br>
+      <label>Comment
+       <textarea id="comment" name="comment"></textarea>
+      </label>
+      <input type="submit" value="Add Comment">
+    </form>
+</div>
+    <script>
+      function outputname(){
+        var x, y, name, a, b, answer;
+        x=document.getElementById("form1");
+        y=x.elements["name"].value;
+        document.getElementById("demo").innerHTML="Hello "+y+"<br>";
+        document.getElementById("demo").innerHTML+=y + "";
+      }
+    </script>
 
-                                </header>
-                        </div>
+    <script> src="https://kit.fontawesome.com/9bcb22772d.js"
+    crossorigin="anonymous"</script>
 
-                <div class = "bodytext">    
-                        <p>Position an oven shelf in the middle of the oven. Heat the oven to 180C/ 160C fan/ gas 4</p>
-
-                        <p>Line the base of a 23cm springform cake tin by putting a square piece of parchment paper 
-                        or foil on top of the tin base and then clipping the side on so the paper or foil is trapped 
-                        and any excess sticks out of the bottom</p>
-
-                        <p>For the crust, melt 85g butter in a medium pan. Stir in 140g digestive biscuit crumbs and 1 
-                        tbsp golden caster or granulated sugar so the mixture is evenly moistened.</p>
-
-                        <p>Press the mixture into the bottom of the pan and bake for 10 minutes. 
-                        Cool on a wire rack while preparing the filling</p>
-
-                        <p>For the filling, increase the oven temperature to fan 220C/ 200C fan/ gas 7. In a table top mixer fitted with the paddle attachment, 
-                        beat 900g full-fat soft cheese at medium-low speed until creamy, about 2 minutes.</p>
-
-                        <p>With the mixer on low, gradually add 250g golden caster sugar, then 3 tbsp plain flour and a pinch of salt, 
-                        scraping down the sides of the bowl and the paddle twice</p>
-                </div>
-                <script src="http://kit.fontawesome.com/d32396bb69.js"></script> 
-        </body>
+    <script src="indexContactUs.js"></script>
+  </body>
 </html>

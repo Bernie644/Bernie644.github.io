@@ -1,75 +1,136 @@
-
 body 
 {
-    background-color: rgb(204, 170, 160);
+    background-color: rgb(54, 100, 161);
     margin: 0;
+    font-family: Arial;
 } 
-/* 
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
+button{
+  color: #8d2929;
+  margin-top: 20%;
+}
+h1{
+  font-family: Arial;
+  margin-left: 10%;
+  font-size: 90%;
+  margin-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+h3
+{
+  text-align: center;
+  margin-bottom: 7%;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width:100%;
+  font-family: arial;
+}
+.dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  display: none;
+  list-style: none; 
+  width: 100%;
+  padding: 0;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown button {
+  background:  rgb(49, 11, 49);
+  color: rgb(255, 255, 255);
+  border: none;
+  margin: 0;
+  padding: 0.4em 0.8em;
+  font-size: 130%;
+  width:100%;
+  text-align: justify;
+  font-family: arial;
+}
+.dropdown a {
+  display: block;
+  padding: 0.2em 0.8em;
+  text-decoration: none;
+  background: rgba(32, 13, 43, 0.726);
+  color: #ffffff;
+}
+.dropdown a:hover {
+  background: rgb(255, 255, 255);
+  color: black
+}
+  table {
+    text-align: justify;
+    border-collapse: collapse;
+    border: 1px solid #010801;
+    font-size: 90%;
+    background: rgb(55, 25, 71);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13%;
+    margin-bottom: 13%;
+    color: #ffffff;
+  }  
+  tr:nth-child(even) {
+    background:rgb(253, 253, 253);
+    color: #111011;
+  }    
+  table th, 
+  table td {
+    padding: 20px 50px;
+  }   
+  table th {
+    border-bottom: 1px solid #d4d4d4;
   }
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }  
-  .topnav a.active {
-    background-color: rgb(43, 9, 34);
-    color: white;
-  } */
+  form {margin-bottom: 13%;}
+
+ .jsonButton {
+   text-align: justify;
+   margin-bottom: 25%;
+  }
+  .star{
+    color: goldenrod;
+    font-size: 90%;
+    padding: 0 1rem; /* space out the stars */
+  }
+  .star::before{
+    content: '\2606';    /* star outline */
+    cursor: pointer;
+  }
+  .star.rated::before{
+    /* the style for a selected star */
+    content: '\2605';  /* filled star */
+  }
   
-  .topnav {
-    display:flex;
-    background-color:rgb(82, 76, 76);
-    justify-content: center;
-   
+  .stars{
+      counter-reset: rateme 0;   
+      font-size: 2.0rem;
+      font-weight: 900;
+      margin-bottom: 7%;
+      text-align: center;
   }
-  .topnav a {
-    padding: 20px; 
-    text-decoration: none;
+  .star.rated{
+      counter-increment: rateme 1;
+  }
+  .stars::after{
+      content: counter(rateme) '/5';
+  }
+  /* Credit https://www.youtube.com/watch?v=dPCj6Qkq13Y&t=0s*/
+
+  .form{
+    margin: 10%;
+    padding: 10%;                                         /*Used percentages in order for the website to be responsive*/
+    border: 1% solid #000000;
+    margin-bottom: 10%;
     text-align: center;
-    color:black;
-    }
-    @media screen and (max-width:700px)
-    {
-    .topnav 
-    {
-      flex-direction: column;
-      /*This make it stack when it gets smaller*/
-      /*On hover hightlight*/
-        }
-    }
-    .bodytext{
-      /*make the text justified*/
-      /*display:flex;*/
-      background-color:rgb(241, 236, 236);
-      text-align: column;
-    }
-  .headerbox
-  { 
-    padding:20px; background:rgb(223, 215, 220) 
-  }
-  .flexible
-  { 
-    display:flex; height:300px; width:400px; background: rgb(204, 160, 160); flex-direction: column;
-  }
-  .centered
-  { 
-    justify-content:center;align-items:center 
-  }
-  .push-right
-  { 
-    margin-left:auto 
-  }
-  .space-evenly
-  {
-    justify-content: space-evenly;
-  }
+   }
+   submitForm{
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+   }
+
+ 
